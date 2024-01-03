@@ -35,7 +35,7 @@ export default (props: Props) => {
               <Show when={props.canEdit()} fallback={<IconEnv />}>
                 <span onClick={() => props.setCurrentSystemRoleSettings('')} class="sys-edit-btn p-1 rd-50%" > <IconX /> </span>
               </Show>
-              <span>System Role ( Temp = {temperature()} ) : </span>
+              <span>系统角色 ( Temp = {temperature()} ) : </span>
             </div>
             <div class="mt-1">
               {props.currentSystemRoleSettings()}
@@ -45,7 +45,7 @@ export default (props: Props) => {
         <Show when={!props.currentSystemRoleSettings() && props.canEdit()}>
           <span onClick={() => props.setSystemRoleEditing(!props.systemRoleEditing())} class="sys-edit-btn">
             <IconEnv />
-            <span>Add System Role</span>
+            <span>添加系统角色</span>
           </span>
         </Show>
       </Show>
@@ -55,7 +55,7 @@ export default (props: Props) => {
             <IconEnv />
             <span>System Role:</span>
           </div>
-          <p class="my-2 leading-normal text-sm op-50 dark:op-60">Gently instruct the assistant and set the behavior of the assistant.</p>
+          <p class="my-2 leading-normal text-sm op-50 dark:op-60">温柔地指导助手，并设定助手的行为。</p>
           <div>
             <textarea
               ref={systemInputRef!}
