@@ -53,7 +53,7 @@ export default (props: Props) => {
         <div>
           <div class="fi gap-1 op-50 dark:op-60">
             <IconEnv />
-            <span>System Role:</span>
+            <span>系统角色:</span>
           </div>
           <p class="my-2 leading-normal text-sm op-50 dark:op-60">温柔地指导助手，并设定助手的行为。</p>
           <div>
@@ -68,7 +68,7 @@ export default (props: Props) => {
           </div>
           <div class="w-full fi fb">
             <button onClick={handleButtonClick} gen-slate-btn>
-              Set
+              设置
             </button>
             <div class="w-full ml-2">
               <SettingsSlider
